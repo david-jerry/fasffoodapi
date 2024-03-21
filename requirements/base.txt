@@ -71,3 +71,5 @@ reportlab==4.1.0
 
 # Rest API Search Filtering
 django-filter==24.1
+
+rest-framework-generic-relations==2.1.0

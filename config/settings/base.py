@@ -96,6 +96,7 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "drf_spectacular",
     'django_filters',
+    "generic_relations",
 ]
 
 LOCAL_APPS = [

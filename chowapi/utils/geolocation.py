@@ -30,7 +30,7 @@ class CoordinateUtils:
             "X-RapidAPI-Host": "ip-reputation-geoip-and-detect-vpn.p.rapidapi.com",
         }
 
-        response = requests.get(self, url, headers=headers, params=querystring)
+        response = requests.get(url, headers=headers, params=querystring)
         if response.status_code == 200:
             LOGGER.info(response.json())
             return response.json()

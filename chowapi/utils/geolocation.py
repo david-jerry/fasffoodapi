@@ -16,8 +16,9 @@ class CoordinateUtils:
         self.request = request
         self.redis_client = redis.from_url(redis_url)
         self.user = None
-        if request.user.is_rider and not request.user.rider_particular.on_a_request:
-            self.user = request.user
+        if request.user.is_authetnicated:
+            if request.user.is_rider and not request.user.rider_particular.on_a_request:
+                self.user = request.user
 
     def get_ip_geolocation_info(ip):
         url = "https://ip-reputation-geoip-and-detect-vpn.p.rapidapi.com/"

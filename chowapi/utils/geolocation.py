@@ -20,7 +20,7 @@ class CoordinateUtils:
             if request.user.is_rider and not request.user.rider_particular.on_a_request:
                 self.user = request.user
 
-    def get_ip_geolocation_info(ip):
+    def get_ip_geolocation_info(self, ip):
         url = "https://ip-reputation-geoip-and-detect-vpn.p.rapidapi.com/"
 
         querystring = {"ip": str(ip)}
@@ -30,14 +30,14 @@ class CoordinateUtils:
             "X-RapidAPI-Host": "ip-reputation-geoip-and-detect-vpn.p.rapidapi.com",
         }
 
-        response = requests.get(url, headers=headers, params=querystring)
+        response = requests.get(self, url, headers=headers, params=querystring)
         if response.status_code == 200:
             LOGGER.info(response.json())
             return response.json()
 
 
 
-    def get_coordinates(name: str) -> dict | None:
+    def get_coordinates(self, name: str) -> dict | None:
         nominatim_url = "https://nominatim.openstreetmap.org/search"
         params = {"format": "json", "q": name}
 

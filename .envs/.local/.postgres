@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=chowapi
+POSTGRES_USER=PFgnJlElCYNHefLlEeRvBaccrglWXInY
+POSTGRES_PASSWORD=iW01n48czl9Q1hoWg4uGmLY7MeYfDJHZAT7ZqJGxIIqmCyQJHyWvbj1Ul5Ws5hYl

@@ -16,7 +16,7 @@ class CoordinateUtils:
         self.request = request
         self.redis_client = redis.from_url(redis_url)
         self.user = None
-        if request.user.is_authetnicated:
+        if request.user.is_authenticated:
             if request.user.is_rider and not request.user.rider_particular.on_a_request:
                 self.user = request.user
 

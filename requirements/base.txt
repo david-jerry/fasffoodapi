@@ -47,7 +47,7 @@ pyotp==2.9.0
 # Custom Utilities
 # ------------------------------------------------------------------------------
 # extract tld or subdomains from a link/url
-tldextract==5.1.1   # https://pypi.org/project/tldextract/
+tldextract==5.1.2   # https://pypi.org/project/tldextract/
 # log informations
 loguru==0.7.2
 # word ranking and pleagarism

@@ -97,6 +97,7 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     'django_filters',
     "generic_relations",
+    "drf_yasg",
 ]
 
 LOCAL_APPS = [

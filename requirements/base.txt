@@ -51,7 +51,7 @@ tldextract==5.1.1   # https://pypi.org/project/tldextract/
 # log informations
 loguru==0.7.2
 # word ranking and pleagarism
-thefuzz[speedup]==0.20.0
+thefuzz[speedup]==0.22.1
 # Reset Migrations
 django-reset-migrations==0.4.0  # https://pypi.org/project/django-reset-migrations/
 # Protected fields
